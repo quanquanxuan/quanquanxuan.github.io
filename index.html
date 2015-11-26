@@ -261,7 +261,7 @@
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2015/11/26/xhtml注意事项/">xhtml注意事项</a>
+      <a class="article-title" href="/2015/11/26/xhtml注意事项/">xhtml文档标准及注意事项</a>
     </h1>
   
 
@@ -270,13 +270,77 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <blockquote>
-<p>世界上的一切都必须按照一定的规矩秩序各就各位</p>
-<pre><code><span class="comment">------莱蒙特</span>
-</code></pre><h1 id="xhtml文档标准">xhtml文档标准</h1></blockquote>
-<p><strong>1、</strong>html表示文档的根目录，它包含head区域和body区域。</p>
-<p><strong>2、</strong>head区域一定要有title，也就是文档标题;和meta标签的charset属性指定文档的编码格式<br><strong>3、</strong>所有可见内容都要放在body里面</p>
-
+        <p>^_^</p>
+<blockquote>
+<p>世界上的一切都必须按照一定的规矩秩序各就各位    ——莱蒙特</p>
+</blockquote>
+<p>一个了解过html和学习过html的同学都知道html的文档标准是多么的重要，不论你是少些了一些标签，或是把标签的顺序写错了，那么你所写的代码就有可能报错或是出现乱码，而且一时半会儿你还找不到这个错误。。。</p>
+<p>因此，我今天要分享一下xhtml的文档标准以及需要注意的事项</p>
+<h1 id="xhtml文档标准">xhtml文档标准</h1><pre><code><span class="doctype">&lt;!doctype html&gt;</span>
+<span class="tag">&lt;<span class="title">html</span>&gt;</span>
+    <span class="tag">&lt;<span class="title">head</span>&gt;</span>
+        <span class="tag">&lt;<span class="title">meta</span> <span class="attribute">charset</span>=<span class="value">"utf-8"</span> /&gt;</span>//编码格式
+        <span class="tag">&lt;<span class="title">title</span>&gt;</span><span class="tag">&lt;/<span class="title">title</span>&gt;</span>//文档标题
+    <span class="tag">&lt;/<span class="title">head</span>&gt;</span>
+    <span class="tag">&lt;<span class="title">body</span>&gt;</span>
+        //可视区域
+    <span class="tag">&lt;/<span class="title">body</span>&gt;</span>
+<span class="tag">&lt;/<span class="title">html</span>&gt;</span>
+</code></pre><p><strong>1、</strong>html表示文档的根目录，它包含head区域和body区域。</p>
+<p><strong>2、</strong>head区域一定要有title和meta，也就是文档标题和meta标签的charset属性指定文档的编码格式</p>
+<p><strong>3、</strong>所有可见内容都要放在body里面，body是该页面的可视化区域。</p>
+<p><strong>注意事项:</strong></p>
+<ul>
+<li>在html中有双标签和单标签。双标签是成双成对的出现的，有开始标签和结束标签;单标签的闭合方式不同于双标签,在末尾的地方”&gt;“前面加上”/“,完成闭合.因此doctype不是标签。</li>
+</ul>
+<p>双标签，例如：</p>
+<pre><code><span class="tag">&lt;html&gt;</span><span class="tag">&lt;/html&gt;</span>
+<span class="tag">&lt;head&gt;</span><span class="tag">&lt;/head&gt;</span>
+</code></pre><p>单标签，例如：</p>
+<pre><code><span class="tag">&lt;meta /&gt;</span>
+</code></pre><p>不是标签</p>
+<pre><code><span class="doctype">&lt;!doctype html&gt;</span>
+</code></pre><ul>
+<li>所有的标签 属性 命名都要用小写，属性值用双引号。</li>
+</ul>
+<p>例如：</p>
+<pre><code><span class="tag">&lt;<span class="title">meta</span> <span class="attribute">charset</span>=<span class="value">"utf-8"</span> /&gt;</span>
+</code></pre><ul>
+<li>注意缩进，文档的结构才会清晰明了。</li>
+<li>body里面的内容，最好都要有标签嵌套。</li>
+<li>内容不可写在head和html等地方。</li>
+</ul>
+<p>例如：</p>
+<pre><code><span class="doctype">&lt;!doctype html&gt;</span>
+<span class="tag">&lt;<span class="title">html</span>&gt;</span>
+    <span class="tag">&lt;<span class="title">div</span>&gt;</span>我是一个div，是个双标签。没有什么意义，就是一个区域、块<span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+    <span class="tag">&lt;<span class="title">head</span>&gt;</span>
+        <span class="tag">&lt;<span class="title">meta</span> <span class="attribute">charset</span>=<span class="value">"utf-8"</span> /&gt;</span>//编码格式
+        <span class="tag">&lt;<span class="title">title</span>&gt;</span><span class="tag">&lt;/<span class="title">title</span>&gt;</span>//文档标题
+    <span class="tag">&lt;/<span class="title">head</span>&gt;</span>
+    <span class="tag">&lt;<span class="title">body</span>&gt;</span>
+        //可视区域
+    <span class="tag">&lt;/<span class="title">body</span>&gt;</span>
+<span class="tag">&lt;/<span class="title">html</span>&gt;</span>
+这样写是不对的。。。
+</code></pre><ul>
+<li>标签顺序不能写错，也不能少写。</li>
+</ul>
+<p>例如：</p>
+<pre><code><span class="doctype">&lt;!doctype html&gt;</span>
+<span class="tag">&lt;<span class="title">html</span>&gt;</span>
+    <span class="tag">&lt;<span class="title">head</span>&gt;</span>
+        <span class="tag">&lt;<span class="title">title</span>&gt;</span>我是标题<span class="tag">&lt;/<span class="title">title</span>&gt;</span>//文档标题
+        <span class="tag">&lt;<span class="title">meta</span> <span class="attribute">charset</span>=<span class="value">"utf-8"</span> /&gt;</span>//编码格式
+    <span class="tag">&lt;/<span class="title">head</span>&gt;</span>
+    <span class="tag">&lt;<span class="title">body</span>&gt;</span>
+        //可视区域
+        你好！！！
+    <span class="tag">&lt;/<span class="title">body</span>&gt;</span>
+<span class="tag">&lt;/<span class="title">html</span>&gt;</span>
+这样虽然不会出现汉字不可识别的情况，但这是不正确的书写格式。
+如果把<span class="tag">&lt;<span class="title">meta</span> <span class="attribute">charset</span>=<span class="value">"utf-8"</span> /&gt;</span>去掉会出现汉字不可识别，出现乱码的状况。
+</code></pre>
       
     </div>
     

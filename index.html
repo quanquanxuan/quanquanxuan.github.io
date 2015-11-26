@@ -273,19 +273,19 @@
         <p>^_^</p>
 <p>#background<br><strong>1、</strong>背景色(background-color)</p>
 <p><strong>主要介绍以下三种背景属性值</strong></p>
-<p> 可以为英语代码，例如：</p>
+<p>可以为英语代码，例如：</p>
 <pre><code><span class="tag">div</span><span class="rules">{
     <span class="rule"><span class="attribute">width</span>:<span class="value"><span class="number">50px</span></span></span>;
     <span class="rule"><span class="attribute">height</span>:<span class="value"><span class="number">50px</span></span></span>;
     <span class="rule"><span class="attribute">background-color</span>:<span class="value">red</span></span>;
 }</span>
 结果：一个宽和高都为50<span class="tag">px</span>的红色方块
-</code></pre><p> 可以为16进制颜色码，例如：</p>
+</code></pre><p>可以为16进制颜色码，例如：</p>
 <pre><code><span class="attribute">background-color</span>:<span class="hexcolor">#000</span>;
-</code></pre><p> 可以为rgb格式：</p>
+</code></pre><p>可以为rgb格式：</p>
 <pre><code><span class="built_in">background</span>-<span class="built_in">color</span>:rgb(<span class="number">225</span>,<span class="number">182</span>,<span class="number">193</span>);
 其中，r代表<span class="built_in">red</span>红色，g代表<span class="built_in">green</span>绿色，b代表<span class="built_in">blue</span>蓝色。
-</code></pre><p>##^_^##<br><strong>2、</strong>背景图片(background-image)</p>
+</code></pre><p><hr><br><strong>2、</strong>背景图片(background-image)</p>
 <p>例如：</p>
 <pre><code><span class="tag">div</span><span class="rules">{
         <span class="rule"><span class="attribute">width</span>:<span class="value"><span class="number">40px</span></span></span>;
@@ -302,7 +302,7 @@
 <li><p>如果图片较大，则会充满div，多余的不显示，只显示div里的图片。    </p>
 </li>
 </ul>
-<p>##^_^##<br><strong>3、</strong>背景位置(background-position)</p>
+<p><hr><br><strong>3、</strong>背景位置(background-position)</p>
 <p>例如：</p>
 <pre><code><span class="tag">div</span><span class="rules">{
     <span class="rule"><span class="attribute">width</span>:<span class="value"><span class="number">40px</span></span></span>;
@@ -312,21 +312,18 @@
 }</span>
 在<span class="tag">div</span>里对图片进行定位，是相对于<span class="tag">div</span>进行的定位，分别是沿<span class="tag">x</span>轴和沿<span class="tag">y</span>轴
 </code></pre><p><strong>注意:</strong>    </p>
-<ul>
-<li><p>background-position的值可以为正数，也可为负数，也可用百分数,也可以为left center right。</p>
-<p>  1、background-position:x y;</p>
+<p>background-position的值可以为正数，也可为负数，也可用百分数,也可以为left center right。</p>
+<p>1、background-position:x y;</p>
 <pre><code>x:(<span class="number">0px</span>, <span class="attribute">right</span>, <span class="attribute">left</span>，center)
 
 y:(<span class="number">0px</span>,<span class="attribute">top</span>,<span class="attribute">bottom</span>，center)
-</code></pre><p>  2、background-position:0px;</p>
+</code></pre><p>2、background-position:0px;</p>
 <pre><code>x轴和y轴移动相同的距离
-</code></pre><p>  3、backgroun-position:center;</p>
+</code></pre><p>3、backgroun-position:center;</p>
 <pre><code>x轴和y轴都在中间
-</code></pre><p>  4、background-position:left/right/top/bottom;</p>
+</code></pre><p>4、background-position:left/right/top/bottom;</p>
 <pre><code>x轴和y轴谁能识别谁移动,不能识别的默认为<span class="value">center</span>
-</code></pre></li>
-</ul>
-<p>##^_^##<br><strong>4、</strong>背景是否平铺(background-repeat)</p>
+</code></pre><p><hr><br><strong>4、</strong>背景是否平铺(background-repeat)</p>
 <p>例如：</p>
 <pre><code><span class="tag">div</span><span class="rules">{
     <span class="rule"><span class="attribute">width</span>:<span class="value"><span class="number">40px</span></span></span>;
@@ -340,8 +337,7 @@ y:(<span class="number">0px</span>,<span class="attribute">top</span>,<span clas
 <span class="number">2</span>、<span class="keyword">repeat</span>-x 向着x轴平铺
 
 <span class="number">3</span>、<span class="keyword">repeat</span>-y向着y轴平铺
-</code></pre><p>##^_^##</p>
-<p><strong>5、</strong>背景大小(background-size)</p>
+</code></pre><p><hr><br><strong>5、</strong>背景大小(background-size)</p>
 <pre><code><span class="tag">div</span><span class="rules">{
     <span class="rule"><span class="attribute">width</span>:<span class="value"><span class="number">40px</span></span></span>;
     <span class="rule"><span class="attribute">height</span>:<span class="value"><span class="number">40px</span></span></span>;
@@ -354,15 +350,15 @@ y:(<span class="number">0px</span>,<span class="attribute">top</span>,<span clas
 <li>如果是一个值，对图片进行相对放大或缩小；</li>
 <li>如果是两个值，第一个值是宽，第二个值是高，会按照这个大小对图片进行改变。</li>
 </ul>
-<p>##^_^##<br><strong>6、</strong>background的复合写法</p>
+<p><hr><br><strong>6、</strong>background的复合写法</p>
 <pre><code><span class="built_in">background</span>:<span class="built_in">background</span>-<span class="built_in">color</span> <span class="built_in">background</span>-<span class="built_in">image</span> <span class="built_in">background</span>-position <span class="built_in">background</span>-repeat;(推荐写法)
 </code></pre><p><strong>注意:</strong>    </p>
 <ul>
 <li>background-position和backgrolund-repeat可以换位置，其他的则不可以。</li>
 </ul>
-<p>##^_^##</p>
+<p><hr></p>
 <p>#body里设置background<br><strong>在body里可以设置背景图片，但是背景图片不会遵从body的width、height的样式设置，因为背景是作用于可视区域的，而body的可视区域是浏览器的窗口。</strong></p>
-<p>##^_^##<br>        注意：<br>        在设置背景时，必须设置宽和高后才能显示出来，不然背景不会显示。因为背景不会撑开宽和高。</p>
+<p><hr><br>        注意：<br>        在设置背景时，必须设置宽和高后才能显示出来，不然背景不会显示。因为背景不会撑开宽和高。</p>
 <p>如有异议要记得留言哦！！！会及时删改及更新。。。^_-        </p>
 
       

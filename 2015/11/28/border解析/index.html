@@ -19,7 +19,7 @@
 对边框进行样式的设置时，你第一想到的可能就是边框颜色是什么色，宽度是多宽，有什么样的边框。那我们就按这样的顺序进行一一的分析。
 1、border-color顾名思义，可以看出是设置边框border的颜色
 上一篇写到background-color，你也许会想到border-c">
-<meta property="og:updated_time" content="2015-11-28T09:08:27.000Z">
+<meta property="og:updated_time" content="2015-11-28T09:11:59.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="边框border解析">
 <meta name="twitter:description" content="^_^
@@ -309,7 +309,8 @@
 </code></pre><p>可以为rgb格式：</p>
 <pre><code>border-<span class="built_in">color</span>:rgb(<span class="number">225</span>,<span class="number">182</span>,<span class="number">193</span>);
 其中，r代表<span class="built_in">red</span>红色，g代表<span class="built_in">green</span>绿色，b代表<span class="built_in">blue</span>蓝色。
-</code></pre><h2 id="注意:">注意:</h2><p><strong>1、</strong>border-color有默认值:</p>
+</code></pre><p><strong>注意:</strong></p>
+<p><strong>1、</strong>border-color有默认值:</p>
 <pre><code>默认颜色值是字体颜色，默认的字体颜色是黑色
 </code></pre><p><strong>2、</strong>border-color可以分方向的设置边框色</p>
 <pre><code><span class="attribute">border-left-color</span>:;<span class="comment">//左边框</span>
@@ -334,7 +335,7 @@ border:<span class="built_in">red</span> <span class="built_in">green</span> <sp
     <span class="attribute">border-width</span><span class="value">:<span class="number">2px</span>;</span><span class="comment">//边框的宽度为2像素</span>
 }
 结果是一个宽和高都为50px，带有2px实线边框的方框
-</code></pre><h2 id="注意:-1">注意:</h2><p><strong>1、</strong>border-width有默认值:</p>
+</code></pre><p><strong>注意:</strong><br><strong>1、</strong>border-width有默认值:</p>
 <pre><code>默认值为<span class="number">3</span>px
 </code></pre><p><strong>2、</strong>border-width的属性值不能为负数</p>
 <p><strong>3、</strong>border-width和border-color是一样可以分方向进行设置，而且规则是一样的，在这里就不过多的解释了</p>
@@ -357,12 +358,12 @@ border:<span class="built_in">red</span> <span class="built_in">green</span> <sp
     <span class="rule"><span class="attribute">border-style</span>:<span class="value">solid</span></span>;
 }</span>
 结果是一个宽和高都为50<span class="tag">px</span>，带有实线边框的方框
-</code></pre><h2 id="注意:-2">注意:</h2><p><strong>1、</strong>border-style没有默认的样式，如果不进行border-style的设置，将不会看到边框</p>
+</code></pre><p><strong>注意:</strong><br><strong>1、</strong>border-style没有默认的样式，如果不进行border-style的设置，将不会看到边框</p>
 <p><strong>2、</strong>border-style和border-color也是一样可以分方向进行设置，而且规则也是一样的，在这里也就不过多的解释了</p>
 <hr>
 
 <p><strong>border和background一样，也是有复合写法的，那让我们一起了解一下border的复合写法吧！！！</strong></p>
-<h1 id="border的复合写法">border的复合写法</h1><pre><code><span class="attribute">border</span>:<span class="attribute">border-color</span> <span class="attribute">border-width</span> <span class="attribute">border-style</span>
+<h1 id="4、border的复合写法">4、border的复合写法</h1><pre><code><span class="attribute">border</span>:<span class="attribute">border-color</span> <span class="attribute">border-width</span> <span class="attribute">border-style</span>
 没有固定的书写顺序，可以任意排列。
 </code></pre><p>例如：</p>
 <pre><code><span class="attribute">border</span>: <span class="number">1px</span> red solid;<span class="comment">//宽度为1px，颜色为red的实线边框</span>

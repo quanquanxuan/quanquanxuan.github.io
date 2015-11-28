@@ -8,8 +8,8 @@
   <meta name="description" content="^_^
 上一篇我介绍了一下有关background的，今天我们来一起解析一下border，看看border有哪些样式。。。
 对边框进行样式的设置时，你第一想到的可能就是边框颜色是什么色，宽度是多宽，有什么样的边框。那我们就按这样的顺序进行一一的分析。
-border-color顾名思义，可以看出是设置边框border的颜色
-上一篇写到background-color，你也许会想到border-col">
+1、border-color顾名思义，可以看出是设置边框border的颜色
+上一篇写到background-color，你也许会想到border-c">
 <meta property="og:type" content="article">
 <meta property="og:title" content="边框border解析">
 <meta property="og:url" content="http://yoursite.com/2015/11/28/border解析/index.html">
@@ -17,16 +17,16 @@ border-color顾名思义，可以看出是设置边框border的颜色
 <meta property="og:description" content="^_^
 上一篇我介绍了一下有关background的，今天我们来一起解析一下border，看看border有哪些样式。。。
 对边框进行样式的设置时，你第一想到的可能就是边框颜色是什么色，宽度是多宽，有什么样的边框。那我们就按这样的顺序进行一一的分析。
-border-color顾名思义，可以看出是设置边框border的颜色
-上一篇写到background-color，你也许会想到border-col">
-<meta property="og:updated_time" content="2015-11-28T03:20:42.000Z">
+1、border-color顾名思义，可以看出是设置边框border的颜色
+上一篇写到background-color，你也许会想到border-c">
+<meta property="og:updated_time" content="2015-11-28T03:34:50.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="边框border解析">
 <meta name="twitter:description" content="^_^
 上一篇我介绍了一下有关background的，今天我们来一起解析一下border，看看border有哪些样式。。。
 对边框进行样式的设置时，你第一想到的可能就是边框颜色是什么色，宽度是多宽，有什么样的边框。那我们就按这样的顺序进行一一的分析。
-border-color顾名思义，可以看出是设置边框border的颜色
-上一篇写到background-color，你也许会想到border-col">
+1、border-color顾名思义，可以看出是设置边框border的颜色
+上一篇写到background-color，你也许会想到border-c">
   
     <link rel="alternative" href="/atom.xml" title="两面三道" type="application/atom+xml">
   
@@ -291,9 +291,11 @@ border-color顾名思义，可以看出是设置边框border的颜色
         <p>^_^</p>
 <p>上一篇我介绍了一下有关background的，今天我们来一起解析一下border，看看border有哪些样式。。。</p>
 <p>对边框进行样式的设置时，你第一想到的可能就是边框颜色是什么色，宽度是多宽，有什么样的边框。那我们就按这样的顺序进行一一的分析。</p>
-<h1 id="border-color">border-color</h1><p>顾名思义，可以看出是设置边框border的颜色</p>
-<p>上一篇写到background-color，你也许会想到border-color是不是也和background-color一样具有三种属性值，##bingo##，它也具备一样的三种属性值，那来让我们一起去看一下吧！！！</p>
-<p><strong>主要介绍以下三种边框色属性值</strong></p>
+<h1 id="1、border-color">1、border-color</h1><p>顾名思义，可以看出是设置边框border的颜色</p>
+<p>上一篇写到background-color，你也许会想到border-color是不是也和background-color一样具有三种属性值，<strong>bingo</strong>，它也具备一样的三种属性值，那来让我们一起去看一下吧！！！</p>
+<ul>
+<li><strong>主要介绍以下三种边框色属性值</strong></li>
+</ul>
 <p>可以为英语代码，例如：</p>
 <pre><code><span class="tag">div</span>{
     <span class="attribute">width</span><span class="value">:<span class="number">50px</span>;</span>
@@ -303,12 +305,11 @@ border-color顾名思义，可以看出是设置边框border的颜色
 }
 结果：一个宽和高都为50px的且带有红色的实线边框方块
 </code></pre><p>可以为16进制颜色码，例如：</p>
-<pre><code><span class="attribute">background-color</span>:<span class="hexcolor">#000</span>;
+<pre><code><span class="attribute">border-color</span>:<span class="hexcolor">#000</span>;
 </code></pre><p>可以为rgb格式：</p>
-<pre><code><span class="built_in">background</span>-<span class="built_in">color</span>:rgb(<span class="number">225</span>,<span class="number">182</span>,<span class="number">193</span>);
+<pre><code>border-<span class="built_in">color</span>:rgb(<span class="number">225</span>,<span class="number">182</span>,<span class="number">193</span>);
 其中，r代表<span class="built_in">red</span>红色，g代表<span class="built_in">green</span>绿色，b代表<span class="built_in">blue</span>蓝色。
-</code></pre><p>##注意:##</p>
-<p><strong>1、</strong>border-color有默认值:</p>
+</code></pre><h2 id="注意:">注意:</h2><p><strong>1、</strong>border-color有默认值:</p>
 <pre><code>默认颜色值是字体颜色，默认的字体颜色是黑色
 </code></pre><p><strong>2、</strong>border-color可以分方向的设置边框色</p>
 <pre><code><span class="attribute">border-left-color</span>:;<span class="comment">//左边框</span>
@@ -320,7 +321,11 @@ border-color顾名思义，可以看出是设置边框border的颜色
 border:<span class="built_in">red</span> <span class="built_in">blue</span>;<span class="comment">//上下边框为red，左右边框为blue</span>
 border:<span class="built_in">red</span> <span class="built_in">green</span> <span class="built_in">blue</span>;<span class="comment">//上边框为red，左右边框为green，下边框为blue</span>
 border:<span class="built_in">red</span> <span class="built_in">green</span> <span class="built_in">blue</span> yellow;<span class="comment">//上边框为red，右边框为green，下边框为blue，左边框为yellow</span>
-</code></pre><h1 id="border-width">border-width</h1><p><strong>边框宽度属性值</strong></p>
+</code></pre><p><hr>    </p>
+<h1 id="2、border-width">2、border-width</h1><p>在设置border-width时你可能会问：“border-width和border-color一样有多个属性值写法吗？”，这次可能让你失望了，border-width是没有的，它只有数值这一种。。。</p>
+<ul>
+<li><strong>边框宽度属性值</strong></li>
+</ul>
 <p>为数值，例如：</p>
 <pre><code><span class="tag">div</span>{
     <span class="attribute">width</span><span class="value">:<span class="number">50px</span>;</span>
@@ -329,15 +334,16 @@ border:<span class="built_in">red</span> <span class="built_in">green</span> <sp
     <span class="attribute">border-width</span><span class="value">:<span class="number">2px</span>;</span><span class="comment">//边框的宽度为2像素</span>
 }
 结果是一个宽和高都为50px，带有2px实线边框的方框
-</code></pre><p>##注意:##<br><strong>1、</strong>border-width有默认值:</p>
+</code></pre><h2 id="注意:-1">注意:</h2><p><strong>1、</strong>border-width有默认值:</p>
 <pre><code>默认值为<span class="number">3</span>px
 </code></pre><p><strong>2、</strong>border-width的属性值不能为负数</p>
-<p><strong>3、*</strong> border-width和border-color是一样可以分方向进行设置，而<br>且规则是一样的，在这里就不过多的解释了</p>
-<h1 id="border-style">border-style</h1><p>我们主要介绍一下比较常见的一些边框样式</p>
+<p><strong>3、</strong>border-width和border-color是一样可以分方向进行设置，而且规则是一样的，在这里就不过多的解释了</p>
+<p><hr>    </p>
+<h1 id="3、border-style">3、border-style</h1><p>我们主要介绍一下比较常见的一些边框样式</p>
 <p>常用的：</p>
-<pre><code><span class="attribute">solid</span>:实线
-<span class="attribute">dotted</span>:点状线
-   <span class="attribute">dashed</span>:虚线
+<pre><code><span class="label">solid:</span>实线
+<span class="label">dotted:</span>点状线
+<span class="label">dashed:</span>虚线
 </code></pre><p>不常用：</p>
 <pre><code><span class="label">double:</span>双实线
 <span class="label">groove:</span><span class="number">3</span>D凹槽，有兼容性问题，火狐支持的很好
@@ -351,8 +357,8 @@ border:<span class="built_in">red</span> <span class="built_in">green</span> <sp
     <span class="rule"><span class="attribute">border-style</span>:<span class="value">solid</span></span>;
 }</span>
 结果是一个宽和高都为50<span class="tag">px</span>，带有实线边框的方框
-</code></pre><p>##注意:##<br><strong>1、</strong>border-style没有默认的样式，如果不进行border-style的设置，将不会看到边框</p>
-<p><strong>2、</strong>border-style和border-color也是一样可以分方向进行设置，而且规则是一样的，在这里就不过多的解释了</p>
+</code></pre><h2 id="注意:-2">注意:</h2><p><strong>1、</strong>border-style没有默认的样式，如果不进行border-style的设置，将不会看到边框</p>
+<p><strong>2、</strong>border-style和border-color也是一样可以分方向进行设置，而且规则也是一样的，在这里也就不过多的解释了</p>
 
       
     </div>

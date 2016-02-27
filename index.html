@@ -331,6 +331,21 @@
 <span class="tag">&lt;<span class="title">p</span>&gt;</span>大家好啊！<span class="tag">&lt;/<span class="title">p</span>&gt;</span> 
 </code></pre><p>几号放假？</p><br><hr><br><p>大家好啊！</p> 
 
+<p><strong>6、</strong>blockquote标签：长文本引用。</p>
+<p><strong>7、</strong>pre标签：预格式化的文本 要插入多行代码时不能使用code标签，如果是多行代码，可以使用pre标签。</p>
+<pre><code><span class="type">&lt;pre&gt;</span>
+    <span class="variable"><span class="keyword">var</span> i</span> = <span class="number">0</span>;
+    <span class="variable"><span class="keyword">var</span> j</span> = <span class="number">0</span>;
+<span class="type">&lt;/pre&gt;</span>
+</code></pre><pre>
+    var i = 0;
+    var j = 0;
+</pre>
+
+<p><strong>8、</strong>address标签：为页面加入地址信息，样式为斜体。</p>
+<pre><code><span class="tag">&lt;<span class="title">address</span>&gt;</span>上海市<span class="tag">&lt;/<span class="title">address</span>&gt;</span>
+</code></pre><address>上海市</address>
+
 <p><strong>二、inline-blck行块级标签</strong></p>
 <p><strong>1、</strong>input标签</p>
 <p><strong><em>（1）</em></strong>text文本</p>
@@ -377,6 +392,30 @@
 <li><p>rows属性 ：多行输入域的行数</p>
 </li>
 </ul>
+<p><strong>8、</strong>select标签：下拉列表框。</p>
+<pre><code><span class="tag">&lt;<span class="title">select</span>&gt;</span>
+    <span class="tag">&lt;<span class="title">option</span>&gt;</span>面包<span class="tag">&lt;/<span class="title">option</span>&gt;</span>
+    <span class="tag">&lt;<span class="title">option</span>&gt;</span>牛奶<span class="tag">&lt;/<span class="title">option</span>&gt;</span>
+    <span class="tag">&lt;<span class="title">option</span>&gt;</span>奶酪<span class="tag">&lt;/<span class="title">option</span>&gt;</span>
+<span class="tag">&lt;<span class="title">select</span>&gt;</span>
+</code></pre><p><select><br>    <option>面包</option><br>    <option>牛奶</option><br>    <option>奶酪</option></select></p>
+<select>
+
+<pre><code><span class="tag">&lt;<span class="title">select</span> <span class="attribute">multiple</span>&gt;</span>
+    <span class="tag">&lt;<span class="title">option</span>&gt;</span>面包<span class="tag">&lt;/<span class="title">option</span>&gt;</span>
+    <span class="tag">&lt;<span class="title">option</span>&gt;</span>牛奶<span class="tag">&lt;/<span class="title">option</span>&gt;</span>
+    <span class="tag">&lt;<span class="title">option</span>&gt;</span>奶酪<span class="tag">&lt;/<span class="title">option</span>&gt;</span>
+<span class="tag">&lt;<span class="title">select</span>&gt;</span>
+</code></pre><p><select multiple><br>    <option>面包</option><br>    <option>牛奶</option><br>    <option>奶酪</option></select></p>
+</select><select>
+
+<p>//按住command键，可实现多选。</p>
+<ul>
+<li><p>multiple属性 可以实现多选功能，但是样式会发生改变。</p>
+</li>
+<li><p>option 下拉选项</p>
+</li>
+</ul>
 <p><strong>三、table标签</strong></p>
 <p><strong>1、</strong>table表格</p>
 <p><em>（1）</em>table  tbody这个标签基本上不怎么用了 </p>
@@ -400,13 +439,13 @@
 <span class="tag">&lt;/<span class="title">table</span>&gt;</span>
 </code></pre><table summary="水果价格表"><br>    <caption>表格标题</caption><br>    <tr><br>        <th>香蕉</th><br>        <th>草莓</th><br>        <th>荔枝</th><br>    </tr><br>    <tr><br>        <td>5元/斤</td><br>        <td>10元/斤</td><br>        <td>10元/斤</td><br>    </tr><br></table>
 
-<p><strong>四、行级标签</strong></p>
+<p><strong>四、inline行级标签</strong></p>
 <p><strong>1、</strong>em 和 strong</p>
 <p>两者都是强调，但是两者在强调语气上有区别：em 表示强调；strong 表示更强烈的强调</p>
 <p><em>我是em</em></p>
 <p><strong>我是strong</strong></p>
 <p><strong>2、</strong>span：和div差不多无意义，但多是用来包含字符。</p>
-<p><strong>3、</strong></p>
+<p><strong>3、</strong>q：短文本引用 比如在你的网页的文章里想引用某个作家的一句诗，这样会使你的文章更加出彩，那么<q>标签是你所需要的</q>。</p>
 <p><strong>五、其他标签</strong></p>
 <p><strong>1、</strong>label标签：为input元素定义标注（标记）</p>
 <p><strong>2、</strong>br标签：换行</p>
@@ -431,8 +470,14 @@
 <li><p>alt 指定图像的描述性文本，当图像不可见时（下载不成功时），可看到该属性指定的文本；</p>
 </li>
 </ul>
+<p><strong>5、</strong>code标签 ：在网页中显示一些计算机专业的编程代码，当代码为一行代码时，你就可以使用code标签了。</p>
+<pre><code><span class="type">&lt;code&gt;</span>
+    <span class="variable"><span class="keyword">var</span> i</span> = <span class="number">0</span>;
+    <span class="variable"><span class="keyword">var</span> j</span> = <span class="number">0</span>;
+<span class="type">&lt;/code&gt;</span>
+</code></pre><p><code><br>    var i = 0;<br>    var j = 0;<br></code></p>
 <p><strong><em>以上标签都可以通过设置css样式改变标签属性，display:block(块级)|inline（行级）|inline-block（行块级）|table（表格级）|table-cell（表格行级）|table-rows（表格单元级）进行转换</em></strong></p>
-
+</select>
       
     </div>
     
